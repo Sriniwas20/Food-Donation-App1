@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="730dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/homepgbg">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       tools:ignore="MissingConstraints">
+
+       <ImageView
+           android:id="@+id/imageView"
+           android:layout_width="410dp"
+           android:layout_height="300dp"
+           android:layout_marginTop="55dp"
+           app:srcCompat="@drawable/himage"
+           tools:ignore="MissingConstraints" />
+
+       <TextView
+           android:id="@+id/textView"
+           android:layout_below="@id/imageView"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:textColor="@color/black"
+           android:textStyle="bold"
+           android:layout_marginTop="-0dp"
+           android:textSize="20dp"
+           android:layout_centerHorizontal="true"
+           android:textAlignment="center"
+           android:text="Welcome To Food Donation" />
+
+       <Button
+           android:id="@+id/btnvolunteer"
+           android:layout_width="240dp"
+           android:layout_marginTop="70dp"
+           android:layout_centerInParent="true"
+           android:layout_height="60dp"
+           android:layout_below="@id/textView"
+           android:text="Are You a Volunteer?"
+           android:background="@drawable/button_background_green"/>
+
+       <Button
+           android:id="@+id/btnuser"
+           android:layout_width="240dp"
+           android:layout_marginTop="30dp"
+           android:layout_centerInParent="true"
+           android:layout_height="60dp"
+           android:layout_below="@id/btnvolunteer"
+           android:text="Are You a Donor?"
+           android:background="@drawable/button_background_green2"/>
+
+   </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
